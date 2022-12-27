@@ -1,0 +1,49 @@
+{
+  "name": "maps-sync",
+  "version": "1.0.0",
+  "author": "Grigorii Silidis <GSilidis@yahoo.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "webpack",
+    "doc": "jsdoc --configure .jsdoc.json",
+    "start": "gulp build",
+    "lint": "eslint --fix tutorials/cases/*.ts"
+  },
+  "devDependencies": {
+    "@types/leaflet": "^1.9.0",
+    "@types/mapbox__geojson-extent": "^1.0.0",
+    "@types/ol": "^6.5.3",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "clean-jsdoc-theme": "^4.1.9",
+    "css-loader": "^6.7.2",
+    "del": "^7.0.0",
+    "eslint": "~8.22.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-kms": "^1.0.3",
+    "eslint-config-standard-with-typescript": "^24.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-change": "^1.0.2",
+    "gulp-copy": "^4.0.1",
+    "gulp-run": "^1.7.1",
+    "jsdoc": "^4.0.0",
+    "style-loader": "^3.3.1",
+    "taffydb": "^2.7.3",
+    "ts-loader": "^9.4.2",
+    "typescript": "*",
+    "typescript-plugin-css-modules": "^4.1.1",
+    "typings-for-css-modules-loader": "^1.7.0",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.0"
+  },
+  "dependencies": {
+    "@mapbox/geojson-extent": "^1.0.1",
+    "@turf/turf": "^6.5.0",
+    "leaflet": "^1.9.3",
+    "maplibre-gl": "^2.4.0",
+    "ol": "^7.2.2"
+  }
+}

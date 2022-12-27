@@ -1,0 +1,26 @@
+{
+  "source": {
+    "include": [
+      "src",
+      "package.json",
+      "README.md"
+    ],
+    "includePattern": ".js$",
+    "excludePattern": "(node_modules/|docs|patched-vendor)"
+  },
+  "templates": {
+    "default": {
+      "includeDate": false
+    }
+  },
+  "opts": {
+    "tutorials": "temp-docs",
+    "template": "node_modules/clean-jsdoc-theme",
+    "destination": "docs",
+    "private": true,
+    "theme_opts": {
+      "default_theme": "light",
+      "search": false
+    }
+  }
+}
