@@ -13,7 +13,7 @@ maps.
 
 1. Acquire your maptiler key by registering account at [maptiler cloud](https://cloud.maptiler.com/);
 
-2. Create a copy of `config.example.json` named `config.json`. Replace `YOUR_KEY` with key, acquired in Step 1;
+2. Create a copy of `config.example.json` named `config.json`. Replace `YOUR_KEY` with key, acquired in first step;
 
 3. Run `yarn install` and `yarn start`;
 
