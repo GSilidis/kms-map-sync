@@ -13,14 +13,17 @@ const packageJson = JSON.parse(rawPackageJson);
 
 const TEMP_DOCS_CATALOG = 'temp-docs/'
 
+// Cleans all directories, used for building
 function clean() {
     return deleteAsync(['src/', TEMP_DOCS_CATALOG, 'docs/'])
 }
 
+// Removes temporary directories created during other tasks
 function cleanTemporaries() {
     return deleteAsync(['src/', TEMP_DOCS_CATALOG]);
 }
 
+// JSDoc needs at least one file with source code to run. So - creating temporary empty file before launching jsdoc
 function createTempSource (done) {
     fsPromises.mkdir('src', {}).then(() => {
         fsPromises.writeFile('src/index.js', 'class Blank { }')
@@ -37,6 +40,7 @@ function createTempSource (done) {
     })
 }
 
+// Compiles source bundles
 function compileBundles() {
     return new Promise((resolve, reject) => {
         webpack(webpackConfig, (err, stats) => {
@@ -51,6 +55,7 @@ function compileBundles() {
     });
 }
 
+// Injects contents of corresponding .ts file into tutorial html template
 function injectSourceToTemplates(content, done) {
     let newContent = content;
     const scriptName = this.fname.replaceAll('.html', '.ts')
@@ -62,10 +67,12 @@ function injectSourceToTemplates(content, done) {
     done(null, newContent);
 }
 
+// Copy static files to other generated files
 function copyPublicFiles() {
     return gulp.src('public/*').pipe(copy(`docs/${packageJson.name}/${packageJson.version}/`, {}));
 }
 
+// JSDoc
 function buildDocs () {
     return gulp.src('tutorials/cases/*.html')
         .pipe(change(injectSourceToTemplates))
