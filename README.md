@@ -41,6 +41,6 @@ and working map, that is created by this source code. To achieve this, we are us
 ## License
 
 This project is licensed under MIT license. Except geo data, used in tutorials (data located in `assets` and `public`
-catalogs. 
+catalogs). 
 
 Sources of geodata used in tutorials displayed in builded tutorials in corresponding attributions fields.
