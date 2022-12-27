@@ -6,7 +6,6 @@
   "private": false,
   "scripts": {
     "build": "webpack",
-    "doc": "jsdoc --configure .jsdoc.json",
     "start": "gulp build",
     "lint": "eslint --fix tutorials/cases/*.ts"
   },
