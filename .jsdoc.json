@@ -6,7 +6,7 @@
       "README.md"
     ],
     "includePattern": ".js$",
-    "excludePattern": "(node_modules/|docs|patched-vendor)"
+    "excludePattern": "(node_modules/|docs|tutorials)"
   },
   "templates": {
     "default": {

@@ -1,3 +1,9 @@
+/**
+ * This tutorial shows example of using Turf.js lib for any geo related calculation. For example we are moving point
+ * along the line, saved in geojson format. As all calculation happened in Turf.js and not in Maplibre GL JS Api,
+ * you can do the same thing with any maps api. The only thing you need - is the ability to modify position of objects
+ * previously added to map
+ */
 import maplibregl from 'maplibre-gl';
 import { lineString, along } from '@turf/turf';
 import { CircleLayerSpecification, LngLatLike } from 'maplibre-gl/dist/style-spec';

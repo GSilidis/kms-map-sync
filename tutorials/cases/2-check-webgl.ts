@@ -1,3 +1,8 @@
+/**
+ * WebGL APIs provide stunning results, however, not all clients supports this kind of maps
+ * In this tutorial we will check if WebGL is supported before initiating maps.
+ * If it's not supported - we will use Leaflet as a fallback and show user a warning
+ */
 import maplibregl from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
 

@@ -1,3 +1,7 @@
+/**
+ * Heatmaps are most common way of geo data visualisation. In this example we are showing data for traffic accidents
+ * in the City of Aspen, CO using heatmaps
+ */
 import maplibregl from 'maplibre-gl';
 import geojsonExtent from '@mapbox/geojson-extent';
 import { LngLatBoundsLike } from 'maplibre-gl/dist/style-spec';

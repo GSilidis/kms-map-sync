@@ -1,3 +1,8 @@
+/**
+ * Usually, drone images are saved in GeoTIFF format and served through TMS. However, to showcase ability of
+ * Maplibre GL to show raster layers from single picture we will use png file containing aerial photograph of
+ * Hare Island, Saint-Petersburg
+ */
 import maplibregl from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
 

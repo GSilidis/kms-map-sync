@@ -1,3 +1,7 @@
+/**
+ * This tutorial shows interaction with map objects. Here, we are querying all buildings under the mouse cursor and
+ * adding this buildings to another layer with different styling
+ */
 import maplibregl from 'maplibre-gl';
 import { GeoJSONSource } from 'maplibre-gl';
 import { GeoJSON, Feature } from 'geojson';

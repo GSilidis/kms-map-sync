@@ -1,3 +1,8 @@
+/**
+ * Most common use case for online maps is adding single point to an interactive map
+ * In this tutorial we are comparing how to do this in GIS-specialist oriented OpenLayers and general public-oriented
+ * Leaflet
+ */
 import * as L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import { LatLngTuple } from 'leaflet';
