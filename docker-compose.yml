@@ -1,0 +1,15 @@
+version: '3'
+services:
+  builder:
+    image: node:16.19.0
+    build: .
+    volumes:
+      - .:/map-sync
+    working_dir: /map-sync
+    command: sh -c "yarn install && yarn start"
+  cleaner:
+    image: node:16.19.0
+    volumes:
+      - .:/map-sync
+    command:
+      rm -rf /map-sync/docs

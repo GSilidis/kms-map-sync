@@ -9,13 +9,15 @@ maps.
 
 ## How to start
 
-0. Make sure, that `node.js` (tested with v16) and `yarn` (tested with 1.22) are installed; 
+0. Make sure, that `node.js` (tested with v16) and `yarn` (tested with 1.22) are installed. Or you can use 
+   `docker` (tested with 20.10.22) and `docker-compose` (tested with 2.14.1); 
 
 1. Acquire your maptiler key by registering account at [maptiler cloud](https://cloud.maptiler.com/);
 
-2. Create a copy of `config.example.json` named `config.json`. Replace `YOUR_KEY` with key, acquired in first step;
+2. Create a copy of `config.example.json` named `config.json`. Replace `get-your-key-at-maptiler-dot-com` with key, 
+   acquired in first step;
 
-3. Run `yarn install` and `yarn start`;
+3. Run `yarn install` and `yarn start` or `docker-compose run builder`;
 
 4. Open `docs/maps-sync/1.0.0/index.html` in your browser.
 
@@ -36,7 +38,7 @@ and working map, that is created by this source code. To achieve this, we are us
    
 3. `jsdoc` - to generate tutorials pages from intermediates, created by `gulp-change`;
    
-4. And `gulp-run` and other gulp tasks - to put this all together in one yarn command;
+4. And `gulp-run` and other gulp tasks - to put this all together in one yarn command.
 
 ## License
 
